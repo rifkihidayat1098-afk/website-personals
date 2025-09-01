@@ -1,0 +1,71 @@
+/* BLOG PAGE STYLES */
+.content h1 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.content a {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.content a:hover {
+  color: #314bad;
+  text-decoration: underline;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blog-item {
+  background-color: var(--white);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.blog-item h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.blog-item small {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.blog-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+@media (max-width: 600px) {
+  .blog-item {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .blog-item h2 {
+    font-size: 1.25rem;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+  }
+}
